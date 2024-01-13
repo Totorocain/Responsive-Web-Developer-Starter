@@ -1,0 +1,291 @@
+:root {
+    --sari: #F5C044;
+    --yeşil: #4ca154;
+  
+    --siyah: #18181b;
+    --gri: #52525a;
+    --orta-gri: #d4d4d8;
+    --açık-gri: #fafaf9;
+    --beyaz: #ffffff;
+
+    --ff-accent: 'Sora', sans-serif;
+
+    --fw-light: 100;
+    --fw-regular: 400;
+    --fw-bold: 500;
+    --fw-bolder: 700;
+    
+  }
+  /*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  * {
+    font-family: var(--ff-accent);
+    margin: 0;
+    
+  }
+  html {
+    background-color: var(--orta-gri);
+
+    display: flex;
+   
+  }
+  body {
+    background-position: 0 0,25px 25px;
+    background-image: radial-gradient(#0f172a 1px,transparent 0),radial-gradient(#0f172a 1px,transparent 0);
+    background-attachment: fixed;
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-size: 50px 50px;
+
+
+
+
+    font-family: var(--ff-accent);
+    font-size: 0.875rem;
+
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    background: var(--krem);
+
+    margin-inline: auto;
+    margin-top: 100px;
+
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    height: fit-content;
+
+
+
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .container {
+    width: 640px;
+    height: auto;
+
+    background-color: var(--açık-gri);
+
+    display: grid;
+
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: repeat(5, 20%);
+
+    padding-bottom: 120px;
+    
+  }
+
+  @media (min-width: 640px) {
+   .container {
+    width: 1240px;
+
+    display: inline-flex;
+   }
+   .google-comment {
+    position: relative;
+    top: 145px;
+    left: 250px;
+
+    width: 420px;
+    height: 180px;
+    
+   }
+   .meta-comment {
+    position: relative;
+    top: 370px;
+    height: 180px;
+    right: 220px;
+
+
+   }
+   .reviewer {
+    position: relative;
+    width: 820px;
+    left: 40px;
+    top: 45px;
+    
+   }
+  }
+
+  .tepedeki-yıldız {
+    
+  }
+
+  .reviewer {
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+    padding: 18px;
+    padding-right: 24px;
+    padding-top: 75px;
+
+
+    margin-bottom: 80px;
+
+  }
+  h1 {
+    font-weight: var(--fw-bold);
+    font-size: 2.25rem;
+  }
+
+  .paragraf {
+    font-size: 1.25rem;
+    font-weight: var(--fw-regular);
+    
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    padding-right: 55px;
+
+    color: var(--gri);
+
+  }
+
+
+  .reviewer__first,
+  .reviewer__second,
+  .reviewer__third {
+
+    margin-top: 14px;
+    display: flex;
+
+    font-weight: var(--fw-regular);
+    color: var(--gri);
+    font-size: 0.875rem;
+    
+    gap: 14px;
+
+    
+    
+
+  }
+
+  
+
+  .google-comment {
+
+    background-color: var(--beyaz);
+
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    padding: 14px;
+    
+
+    border-radius: 12px;
+
+    
+    width: 330px;
+    
+
+    
+  }
+  .google-comment__logo {
+
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+  }
+  .customer-comment-second {
+    margin-top: 8px;
+    
+  }
+  .customer-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+
+    
+  }
+  .customer-comment {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--gri);
+    width: 270px;
+
+  }
+
+  .meta-comment {
+
+    background-color: var(--beyaz);
+
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    padding: 16px;
+    margin-left: 18px;
+    margin-top: 24px;
+
+    border-radius: 12px;
+
+    width: 320px;
+
+
+    
+    
+  }
+  .meta-comment__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+  }
+  .yıldızlar {
+    display: flex;
+    flex-direction: row;
+  }
